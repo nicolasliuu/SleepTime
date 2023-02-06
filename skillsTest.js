@@ -2,11 +2,12 @@ const button = document.querySelector("#button");
 const calculator = document.querySelector("#calculator");
 const sleepTimes = document.querySelector("#sleepTimes");
 
-let wakeUpTimes = [];
+
 
 button.addEventListener("click", calculate);
 
 function calculate() {
+    let wakeUpTimes = [];
     let currentTime = new Date();
     currentTime.setMinutes(currentTime.getMinutes() + 14);
     for (let i = 1; i < 7; i++) {
